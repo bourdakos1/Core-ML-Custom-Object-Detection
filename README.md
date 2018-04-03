@@ -24,11 +24,11 @@ python3 object_detection/train.py \
 python3 object_detection/export_inference_graph.py \
         --input_type image_tensor \
         --pipeline_config_path train/pipeline.config \
-        --trained_checkpoint_prefix train/model.ckpt-3974 \
+        --trained_checkpoint_prefix train/model.ckpt-NUMBER \
         --output_directory output_inference_graph
 ```
 
 ```
-pip install tfcoreml tensorflow numpy protobuf
-python core_ml_conversion/convert.py
+pip2 install tfcoreml tensorflow numpy protobuf
+python2 core_ml_conversion/convert.py
 ```
