@@ -16,13 +16,13 @@ Convert your PASCAL VOC annotations to TensorFlow records.
 ```
 annotations
 |-- labels
-|   |-- label_map.pbtxt
-|   |-- trainval.txt
-|   `-- xmls
-|       |-- 1.xml
-|       |-- 2.xml
-|       |-- 3.xml
-|       `-- ...
+│   |-- label_map.pbtxt
+│   |-- trainval.txt
+│   `-- xmls
+│       ├── 1.xml
+|       ├── 2.xml
+|       ├── 3.xml
+|       `── ...
 |-- images
 |   |-- 1.jpg
 |   |-- 2.jpg
