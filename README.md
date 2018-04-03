@@ -12,7 +12,7 @@ pip3 install -r requirements.txt
 
 ## Usage
 ### Convert Annotations
-This will take your annotations and convert them to TensorFlow records.
+Convert your PASCAL VOC annotations to TensorFlow records.
 ```
 python3 object_detection/create_tf_record.py
 ```
