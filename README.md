@@ -10,7 +10,8 @@ cd Core-ML-Custom-Object-Detection
 pip3 install -r requirements.txt
 ```
 
-## Convert Annotations
+## Usage
+### Convert Annotations
 This will take your annotations and convert them to TensorFlow records.
 ```
 python3 object_detection/create_tf_record.py
