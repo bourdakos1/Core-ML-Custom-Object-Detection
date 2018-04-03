@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package core_ml_conversion;
+
+import "core_ml_conversion/item.proto";
+
+message LabelDef {
+  repeated ItemDef item = 1;
+}

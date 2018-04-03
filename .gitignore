@@ -4,6 +4,8 @@ train.record
 val.record
 train/
 base_model/
+/labels.txt
+*.mlmodel
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
