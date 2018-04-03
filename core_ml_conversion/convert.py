@@ -16,6 +16,7 @@ with open('annotations/labels/label_map.pbtxt', 'rb') as f:
     text_format.Merge(f.read(), label_def)
 
 with open('labels.txt', 'wb') as f:
+    f.write('???\n')
     for item in label_def.item:
         f.write(item.name + '\n')
 

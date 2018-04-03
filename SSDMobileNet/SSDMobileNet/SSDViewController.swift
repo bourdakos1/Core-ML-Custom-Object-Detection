@@ -19,7 +19,9 @@ class SSDViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferD
     var lastExecution = Date()
     var screenHeight: Double?
     var screenWidth: Double?
-    let ssdPostProcessor = SSDPostProcessor(numAnchors: 1917, numClasses: 90)
+    
+//    IMPORTANT CHANGE ME TO THE CORRECT NUMBER OF CLASSES
+    let ssdPostProcessor = SSDPostProcessor(numAnchors: 1917, numClasses: 2)
     var visionModel:VNCoreMLModel?
 
     

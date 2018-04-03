@@ -95,7 +95,6 @@ class SSDPostProcessor {
             do {
                 let data = try String(contentsOfFile: path, encoding: .utf8)
                 classNames = data.components(separatedBy: .newlines)
-                
             } catch {
                 print(error)
             }
@@ -169,6 +168,7 @@ class SSDPostProcessor {
         
         for klass in 1...numClasses {
             for box in 0...(numAnchors-1) {
+                // Did you crash here? check SSDViewController and make sure you have the correct number of classes.
                 let score = classPredictions[offset(klass, box)].doubleValue
                 if score > threshold {
                     let anchor = BoundingBox2.init(fromAnchor: Anchors.ssdAnchors[box])
