@@ -51,6 +51,8 @@ python3 object_detection/export_inference_graph.py \
 ```
 
 ### Convert to Core ML
+This script looks for the `frozen_inference_graph.pb` found in the `output_inference_graph` directory.
+It also looks for the `label_map.pbtxt` found in your annotations.
 ```
 pip2 install tfcoreml tensorflow numpy protobuf
 python2 core_ml_conversion/convert.py
