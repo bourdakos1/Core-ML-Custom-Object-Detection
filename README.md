@@ -1,5 +1,6 @@
 # Core-ML-Custom-Object-Detection
 
+## Setup
 ```
 git clone https://github.com/bourdakos1/Core-ML-Custom-Object-Detection.git
 cd Core-ML-Custom-Object-Detection
@@ -9,10 +10,12 @@ cd Core-ML-Custom-Object-Detection
 pip3 install -r requirements.txt
 ```
 
+## Create record files for your annoations and images
 ```
 python3 object_detection/create_tf_record.py
 ```
 
+## Run the training
 ```
 python3 object_detection/train.py \
         --logtostderr \
@@ -20,6 +23,7 @@ python3 object_detection/train.py \
         --pipeline_config_path=ssd.config
 ```
 
+## Create the graph
 ```
 python3 object_detection/export_inference_graph.py \
         --input_type image_tensor \
@@ -28,6 +32,7 @@ python3 object_detection/export_inference_graph.py \
         --output_directory output_inference_graph
 ```
 
+## Convert the graph to Core ML
 ```
 pip2 install tfcoreml tensorflow numpy protobuf
 python2 core_ml_conversion/convert.py
