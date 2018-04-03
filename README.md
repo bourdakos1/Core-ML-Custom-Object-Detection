@@ -1,4 +1,4 @@
-# Core-ML-Custom-Object-Detection
+# Core ML Custom Object Detection
 
 ## Setup
 ```
@@ -10,7 +10,7 @@ cd Core-ML-Custom-Object-Detection
 pip3 install -r requirements.txt
 ```
 
-## Convert annotations
+## Convert Annotations
 ```
 python3 object_detection/create_tf_record.py
 ```
@@ -23,7 +23,7 @@ python3 object_detection/train.py \
         --pipeline_config_path=ssd.config
 ```
 
-## Create the tensorflow model
+## Create the TensorFlow Model
 ```
 python3 object_detection/export_inference_graph.py \
         --input_type image_tensor \
